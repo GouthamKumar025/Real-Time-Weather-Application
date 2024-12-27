@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="assets/planet-earth.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Parent-body -->
+    <div class="parent-body">
+      <div class="weather-container">
+        <h1>Know about the weather</h1>
+        <form id="info-form">
+          <div class="form-group">
+            <label id="city-label" for="city">Enter your Location</label><br />
+            <input
+              id="city"
+              type="text"
+              placeholder="Enter your location"
+              required
+            />
+          </div>
+        </form>
+        <div class="submit-button">
+          <input type="submit" id="submit" value="Submit" />
+        </div>
+      </div>
+    </div>
+    <!-- Pop-up weather dashboard -->
+    <div class="weather-dashboard">
+      <div class="header-bar">
+        <div class="location-info">
+          <div class="location-time">Cortes,Madrid,Spain</div>
+          <div class="temperature">
+            <span class="temp">27</span><span class="degree">°</span>C
+          </div>
+        </div>
+        <div class="weather-info">
+          <ul>
+            <li id="uv">UV: <span id="uv-li">5.6</span></li>
+            <li id="humidity">Humidity: <span id="hum-li">41</span>%</li>
+            <li id="precip">Precip_mm: <span id="precip-li">7</span></li>
+            <li id="wind">Wind: <span id="wind-li">23</span>mph</li>
+          </ul>
+        </div>
+      </div>
+      <div class="forecast-bar"></div>
+      <div class="close-button">
+        <button id="close" class="close">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
