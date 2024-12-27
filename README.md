@@ -17,7 +17,7 @@
   <li>API</li>
 </ul>
 <h3>Screenshots</h3>
-<img src="screenshot(129).png" alt="screen_1">
-<img src="screenshot(130).png" alt="screen_2">
+<img src="Screenshot(129).png" alt="screen_1">
+<img src="Screenshot(130).png" alt="screen_2">
 <h3>Conclusion</h3>
 <p>Contributions to this project are always welcomed.</p>
